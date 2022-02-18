@@ -76,10 +76,39 @@ ul{
     margin: 4px auto -2px;
 }
 .focus{
+    position: relative;
+   overflow: hidden;
    padding-top: 44px; 
+}
+.focus ul{
+    width: 500%;
+    margin-left: -100%;
+    overflow: hidden;
+}
+.focus ul li{
+    float: left;
+    width: 20%;
 }
 .focus img{
     width: 100%;
+}
+.focus ol{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin: 0;
+}
+.focus ol .current{
+    width: 15px;
+}
+.focus ol li{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    list-style: none;
+    border-radius: 2px;
+    transition: all .3s;
 }
 /* 局部导航栏 */
 .local-nav{
